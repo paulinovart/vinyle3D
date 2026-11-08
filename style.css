@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+}
+
+.vinyles-container{
+display: flex;
+flex-direction: column;
+z-index: 100;
+right: 0;
+position: fixed;
+align-items: end;
+justify-content: end;
+margin: 8vw;
+width: fit-content;
+}
+
+canvas{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.vinyle-cover{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.cover-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+   
+}
+
+.vinyles-container > :first-child{
+    transform: rotate(10deg) translateY(10px) translateX(20px);
+    z-index: 10;
+}
+
+.vinyles-container > :nth-child(2){
+    z-index: 11;
+}
+
+.vinyles-container > :last-child{
+    transform: rotate(-10deg) translateY(-10px)translateX(20px);
+    z-index: 10;
+}
+
+.vinyle-cover:hover{
+    z-index: 12;
+    scale: 1.1;
+
+}
+
+.vinyle{ 
+width: 110px;
+height: 110px;
+background-color: rgb(0, 0, 0);
+border-radius: 100px;
+position: absolute;
+margin-inline: auto;
+top :5px;
+right: 20px;
+transition: all 0.7s ease-in-out;
+}
+
+/* .vinyle:hover{
+    right: 70px;
+} */
+
+.hovered-vinyle{    
+    right: 70px;
+}
